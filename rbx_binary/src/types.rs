@@ -54,6 +54,7 @@ impl Type {
             VariantType::ContentId => Type::String,
             VariantType::Tags => Type::String,
             VariantType::MaterialColors => Type::String,
+            VariantType::Attributes => Type::String, // see [#597](https://github.com/rojo-rbx/rbx-dom/issues/597)
 
             VariantType::SharedString => Type::SharedString,
             VariantType::NetAssetRef => Type::SharedString,
