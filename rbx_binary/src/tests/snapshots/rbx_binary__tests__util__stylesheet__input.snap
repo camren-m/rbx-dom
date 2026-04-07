@@ -1,0 +1,57 @@
+---
+source: rbx_binary/src/tests/util.rs
+expression: text_decoded
+---
+num_types: 2
+num_instances: 3
+chunks:
+  - Inst:
+      type_id: 0
+      type_name: StyleRule
+      object_format: 0
+      referents:
+        - 0
+        - 1
+  - Inst:
+      type_id: 1
+      type_name: StyleSheet
+      object_format: 0
+      referents:
+        - 2
+  - Prop:
+      type_id: 0
+      prop_name: Name
+      prop_type: String
+      values:
+        - "> UIListLayout"
+        - ".RootSelector"
+  - Prop:
+      type_id: 0
+      prop_name: PropertiesSerialize
+      prop_type: String
+      values:
+        - "\u0001\u0000\u0000\u0000\r\u0000\u0000\u0000FillDirection\u0015\r\u0000\u0000\u0000FillDirection\u0001\u0000\u0000\u0000"
+        - 02 00 00 00 16 00 00 00 42 61 63 6b 67 72 6f 75 6e 64 54 72 61 6e 73 70 61 72 65 6e 63 79 05 00 00 80 3f 04 00 00 00 53 69 7a 65 0a 00 00 80 3f 00 00 00 00 00 00 80 3f 00 00 00 00
+  - Prop:
+      type_id: 0
+      prop_name: Selector
+      prop_type: String
+      values:
+        - "> UIListLayout"
+        - ".RootSelector"
+  - Prop:
+      type_id: 1
+      prop_name: Name
+      prop_type: String
+      values:
+        - stylesheet
+  - Prnt:
+      version: 0
+      links:
+        - - 0
+          - 1
+        - - 1
+          - 2
+        - - 2
+          - -1
+  - End

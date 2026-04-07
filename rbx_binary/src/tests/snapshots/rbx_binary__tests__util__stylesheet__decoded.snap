@@ -1,0 +1,39 @@
+---
+source: rbx_binary/src/tests/util.rs
+expression: decoded_viewed
+---
+- referent: referent-0
+  name: stylesheet
+  class: StyleSheet
+  properties: {}
+  children:
+    - referent: referent-1
+      name: ".RootSelector"
+      class: StyleRule
+      properties:
+        PropertiesSerialize:
+          Attributes:
+            BackgroundTransparency:
+              Float32: 1
+            Size:
+              UDim2:
+                - - 1
+                  - 0
+                - - 1
+                  - 0
+        Selector:
+          String: ".RootSelector"
+      children:
+        - referent: referent-2
+          name: "> UIListLayout"
+          class: StyleRule
+          properties:
+            PropertiesSerialize:
+              Attributes:
+                FillDirection:
+                  EnumItem:
+                    type: FillDirection
+                    value: 1
+            Selector:
+              String: "> UIListLayout"
+          children: []
